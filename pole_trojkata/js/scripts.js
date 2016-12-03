@@ -1,4 +1,5 @@
-var a = prompt('wpisz wartość długości podstawy')
-var h = prompt('wpisz wartość wysokości trójkąta')
-var triangleArea = a*h/2
-alert('Pole trójkąta wynosi ' + triangleArea)
+var a = prompt('wpisz wartość długości podstawy'),
+    h = prompt('wpisz wartość wysokości trójkąta'), 
+    triangleArea = a*h/2;
+
+alert('Pole trójkąta wynosi ' + triangleArea);
