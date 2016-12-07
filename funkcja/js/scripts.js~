@@ -1,16 +1,25 @@
-var a = prompt('wpisz pierwszą liczbę')
-var b = prompt('wpisz drugą liczbę')
-var wynik = a*a + a*b + b*b
-if (wynik>0)
-  {
-  console.log('wynik jest dodatni i wynosi=' + wynik)
-  }
-else if (wynik<0)
-  {
-  console.log('wynik jest ujemny i wynosi=' + wynik)
-  }
-else if (wynik==0)
-  {
-   console.log('wynik jest równy 0')
-  }
+var result = getTriangleArea();
+
+getTriangleArea();
+
+function getTriangleArea() {
+
+var a = prompt('wpisz wartość dla a ='),
+    h = prompt('wpisz wartość dla h =');
+var triangleArea = -1
   
+ if ( (a > 0) && (h > 0) ) {
+   triangleArea = a*h/2
+ } 
+ return(triangleArea);
+}
+
+if (result === -1) {
+  
+ console.log('Wystąpił błąd - niepoprawne dane');
+  
+}
+else {
+ console.log('Pole trójkąta wynosi = '+ result)
+}
+
