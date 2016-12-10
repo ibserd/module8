@@ -4,15 +4,16 @@ var imionaOne = ['Ola', 'Magda', 'Kasia', 'Ania'],
 
 console.log(wszystkie);
 
-var wpiszImie = prompt('dodaj imie do zbioru wyświetlonego w konsoli: '),
-    dodajImie = wszystkie.push(wpiszImie);
+var wpiszImie = prompt('dodaj imie do zbioru wyświetlonego w konsoli: ');
 
-if (wszystkie.indexOf(wpiszImie) < 7) {
-  wszystkie.splice(7, 1);
+if (wszystkie.indexOf(wpiszImie) !== -1) {
   console.log('Błąd: dodane imie powtarza się. Zbiór pozostaje niezmienny');
   console.log(wszystkie);
 }
 
 else {
+  wszystkie.push(wpiszImie);
   console.log(wszystkie);
 }
+
+
