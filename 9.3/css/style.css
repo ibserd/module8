@@ -1,0 +1,22 @@
+ul {
+  width: 2400px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  height: 400px;
+}
+ul li {
+  list-style: none;
+  background: red;
+  float: left;
+}
+#carousel {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
